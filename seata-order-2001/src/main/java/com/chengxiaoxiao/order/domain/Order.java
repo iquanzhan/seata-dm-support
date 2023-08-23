@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("ORDER")
+@TableName("T_ORDER")
 public class Order {
     @TableId(type = IdType.ID_WORKER_STR)
     private String id;

@@ -25,7 +25,10 @@ public class FeignClientAspect {
     public void before(JoinPoint joinPoint,Object returnVal) throws TransactionException {
         if(returnVal instanceof CommonResult){
             CommonResult returnVal1 = (CommonResult) returnVal;
-            throw new  RuntimeException(returnVal1.getMessage());
+            if (returnVal1.getCode() != 200) {
+                log.error("全局事务异常处理，异常信息：{}", returnVal1.getMessage());
+                throw new RuntimeException(returnVal1.getMessage());
+            }
         }
     }
 }

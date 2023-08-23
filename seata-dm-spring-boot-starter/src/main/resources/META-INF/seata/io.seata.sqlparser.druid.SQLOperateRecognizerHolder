@@ -1,1 +1,4 @@
-com.chengxiaoxiao.seata.sqlparser.druid.dm.DmOperateRecognizerHolder
+io.seata.sqlparser.druid.mysql.MySQLOperateRecognizerHolder
+io.seata.sqlparser.druid.oracle.OracleOperateRecognizerHolder
+io.seata.sqlparser.druid.postgresql.PostgresqlOperateRecognizerHolder
+io.seata.sqlparser.druid.dm.DmOperateRecognizerHolder

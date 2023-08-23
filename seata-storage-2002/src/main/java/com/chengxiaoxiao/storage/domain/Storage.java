@@ -19,8 +19,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @TableName("STORAGE")
 public class Storage {
-    @TableId(type= IdType.ID_WORKER)
-    private int id;
+    @TableId(type = IdType.ID_WORKER_STR)
+    private String id;
     private String productId;
     private Integer total;
     private Integer used;

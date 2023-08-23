@@ -1,1 +1,4 @@
-com.chengxiaoxiao.seata.rm.datasource.undo.dm.keyword.DmKeywordChecker
+io.seata.rm.datasource.undo.oracle.keyword.OracleKeywordChecker
+io.seata.rm.datasource.undo.mysql.keyword.MySQLKeywordChecker
+io.seata.rm.datasource.undo.postgresql.keyword.PostgresqlKeywordChecker
+io.seata.rm.datasource.undo.dm.keyword.DmKeywordChecker
