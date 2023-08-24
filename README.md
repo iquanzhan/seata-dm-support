@@ -12,7 +12,7 @@ Seata 添加对达梦数据库的支持
 
 1. 运行Nacos，下载地址：https://github.com/alibaba/nacos/releases/download/2.0.3/nacos-server-2.0.3.zip
 
-2. 运行seata-server，下载地址：https://github.com/seata/seata/releases/download/v1.4.2/seata-server-1.4.2.zip
+2. 运行seata-server，下载地址：https://github.com/iquanzhan/seata/releases/download/1.7.1-SNAPSHOT/seata-server-1.7.1-SNAPSHOT.tar.gz
 
 3. Seata服务中配置修改
     1. 修改`conf/registry.conf`文件为以下内容
@@ -149,8 +149,3 @@ Seata 添加对达梦数据库的支持
 
 7. 可通过`seata-storage-2002` 服务中的 `com.chengxiaoxiao.storage.controller.StorageController#decrease`
    去除注释`//int i = 10/0;`查看回滚效果。
-
-## 另一种解决方案
-此解决方案采用重写DruidDelegatingDbTypeParser的形式，自动重定向至Oracle的实现。
-并对某些Oracle的处理做了调整。算是一种临时性解决方案
-https://gitee.com/iquanzhan/px-framework/tree/main/px-common/px-seata-spring-boot-starter

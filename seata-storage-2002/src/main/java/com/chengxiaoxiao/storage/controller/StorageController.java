@@ -33,7 +33,7 @@ public class StorageController {
     @GlobalTransactional(rollbackFor = Exception.class)
     CommonResult<?> decrease(@RequestParam("productId") String productId, @RequestParam("count") Integer count) {
         //模拟异常，全局回滚
-        //int i = 10/0;
+        int i = 10/0;
         Storage storage = new Storage();
         storage.setId(null);
         storage.setProductId(productId);

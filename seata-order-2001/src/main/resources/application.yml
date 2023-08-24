@@ -45,3 +45,8 @@ seata:
       password: nacos
       namespace: ""
       dataId: seataServer.properties
+mybatis-plus:
+  global-config:
+    banner: false
+    db-config:
+      capital-mode: on
