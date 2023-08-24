@@ -149,3 +149,8 @@ Seata 添加对达梦数据库的支持
 
 7. 可通过`seata-storage-2002` 服务中的 `com.chengxiaoxiao.storage.controller.StorageController#decrease`
    去除注释`//int i = 10/0;`查看回滚效果。
+
+## 另一种解决方案
+此解决方案采用重写DruidDelegatingDbTypeParser的形式，自动重定向至Oracle的实现。
+并对某些Oracle的处理做了调整。算是一种临时性解决方案
+https://gitee.com/iquanzhan/px-framework/tree/main/px-common/px-seata-spring-boot-starter
